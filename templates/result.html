@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Today's mood</title>
+    <script
+      src="https://kit.fontawesome.com/8aa8789802.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style_result.css')}}" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="top-header">
+        <h2>5월 26일 기준</h2>
+      </div>
+
+      <header>
+        <h1>{{emotion}}</h1>
+        <h2>일 때, 이런 음악은 어떠신가요?</h2>
+      </header>
+
+      <ul class="playlist">
+        <li class="playlist__song">
+          {% if emotion == '분노' %}
+          <img
+            class="albumcover"
+            src="https://image.bugsm.co.kr/album/images/original/1901/190115.jpg?version=undefined"
+            width="50%"
+          />
+          <div class="playlist__info">
+            <h5>I Don't Care</h5>
+            <h6>투애니원</h6>
+          </div>
+
+          <div class="btn-play">
+            <a
+              href="https://open.spotify.com/album/5WyEkWi7ZPMrVSbU1Cabba?highlight=spotify:track:1ErdaM9N7EJ7trhXFnDECg"
+              target="_blank"
+            >
+              <i class="fa-solid fa-play fa-3x"></i>
+            </a>
+          </div>
+
+          {% elif emotion == '슬픔' %}
+          <img
+            class="albumcover"
+            src="https://image.bugsm.co.kr/album/images/original/5323/532394.jpg?version=undefined"
+            width="50%"
+          />
+          <div class="playlist__info">
+            <h5>하루의 끝(End of a day)</h5>
+            <h6>종현</h6>
+          </div>
+
+          <div class="btn-play">
+            <a
+              href="https://open.spotify.com/album/6tYoidZViVVzSXG4jKEmNd?highlight=spotify:track:0cAFqRrz8OqAoHdbiCM5OD"
+              target="_blank"
+            >
+              <i class="fa-solid fa-play fa-3x"></i>
+            </a>
+          </div>
+
+          {% elif emotion == '보통' %}
+          <img
+            class="albumcover"
+            src="https://image.bugsm.co.kr/album/images/original/155189/15518966.jpg?version=undefined"
+            width="50%"
+          />
+          <div class="playlist__info">
+            <h5>Every Second</h5>
+            <h6>Mina Okabe</h6>
+          </div>
+
+          <div class="btn-play">
+            <a
+              href="https://open.spotify.com/album/4VLxnKcNSnVyxw4ByPzQVs?highlight=spotify:track:6dquCx5KAW5jCgGgoTlghL"
+              target="_blank"
+            >
+              <i class="fa-solid fa-play fa-3x"></i>
+            </a>
+          </div>
+
+          {% elif emotion == '행복' %}
+          <img
+            class="albumcover"
+            src="https://image.bugsm.co.kr/album/images/original/3275/327530.jpg?version=undefined"
+            width="50%"
+          />
+          <div class="playlist__info">
+            <h5>HAPPY THINGS</h5>
+            <h6>제이레빗(J Rabbit)</h6>
+          </div>
+
+          <div class="btn-play">
+            <a
+              href="https://open.spotify.com/album/4hV2bO3zsWbnwKEv1aCFCV?highlight=spotify:track:7gwu8e5AmtSvV5F1EeAY45"
+              target="_blank"
+            >
+              <i class="fa-solid fa-play fa-3x"></i>
+            </a>
+          </div>
+
+          {% elif emotion == '즐거움' %}
+          <img
+            class="albumcover"
+            src="https://image.bugsm.co.kr/album/images/original/204456/20445654.jpg?version=undefined"
+            width="50%"
+          />
+          <div class="playlist__info">
+            <h5>SMILEY (Feat. BIBI)</h5>
+            <h6>YENA(최예나)</h6>
+          </div>
+
+          <div class="btn-play">
+            <a
+              href="https://open.spotify.com/album/7qldKtsOWklzmwgll5NjCw?highlight=spotify:track:4zCIxSnVWpGNghERX4uWZF"
+              target="_blank"
+            >
+              <i class="fa-solid fa-play fa-3x"></i>
+            </a>
+          </div>
+
+          {% endif %}
+        </li>
+
+        <li class="playlist__song">
+            {% if emotion == '분노' %}
+            <img
+            class="albumcover"
+            src="https://image.bugsm.co.kr/album/images/original/3446/344648.jpg?version=undefined"
+            width="50%"
+            />
+            <div class="playlist__info">
+            <h5>보여줄게</h5>
+            <h6>에일리</h6>
+            </div>
+
+            <div class="btn-play">
+            <a
+                href="https://open.spotify.com/album/61scVtZ044GUBV4rIvOcPQ?highlight=spotify:track:2MYfUH4Zo7gphaxmMVDrie"
+                target="_blank"
+            >
+                <i class="fa-solid fa-play fa-3x"></i>
+            </a>
+            </div>
+  
+            {% elif emotion == '슬픔' %}
+            <img
+              class="albumcover"
+              src="https://image.bugsm.co.kr/album/images/original/200103/20010363.jpg?version=undefined"
+              width="50%"
+            />
+            <div class="playlist__info">
+              <h5>혼자 두지 마</h5>
+              <h6>백예린</h6>
+            </div>
+  
+            <div class="btn-play">
+              <a
+                href="https://open.spotify.com/album/1ZEIytGF7NOGMyo7UdHixJ?highlight=spotify:track:6ZtAwUSmDK8LCIhZQWIecU"
+                target="_blank"
+              >
+                <i class="fa-solid fa-play fa-3x"></i>
+              </a>
+            </div>
+  
+            {% elif emotion == '보통' %}
+            <img
+              class="albumcover"
+              src="https://image.bugsm.co.kr/album/images/original/204201/20420133.jpg?version=undefined"
+              width="50%"
+            />
+            <div class="playlist__info">
+              <h5>ok time</h5>
+              <h6>corner club</h6>
+            </div>
+  
+            <div class="btn-play">
+              <a
+                href="https://open.spotify.com/album/7dCctA4hLUadjhOKxGNZow?highlight=spotify:track:5xkYUEdREKknCYJxkzm1uf"
+                target="_blank"
+              >
+                <i class="fa-solid fa-play fa-3x"></i>
+              </a>
+            </div>
+  
+            {% elif emotion == '행복' %}
+            <img
+              class="albumcover"
+              src="https://image.bugsm.co.kr/album/images/original/4436/443669.jpg?version=undefined"
+              width="50%"
+            />
+            <div class="playlist__info">
+              <h5>행복 (Happiness)</h5>
+              <h6>Red Velvet (레드벨벳)</h6>
+            </div>
+  
+            <div class="btn-play">
+              <a
+                href="https://open.spotify.com/album/6MMkaYzyM0aLZmDBce3nL6?highlight=spotify:track:6XP9L7di5JnOc9WaeAW8oe"
+                target="_blank"
+              >
+                <i class="fa-solid fa-play fa-3x"></i>
+              </a>
+            </div>
+  
+            {% elif emotion == '즐거움' %}
+            <img
+              class="albumcover"
+              src="https://image.bugsm.co.kr/album/images/original/40400/4040011.jpg?version=undefined"
+              width="50%"
+            />
+            <div class="playlist__info">
+              <h5>ASAP</h5>
+              <h6>STAYC (스테이씨)</h6>
+            </div>
+  
+            <div class="btn-play">
+              <a
+                href="https://open.spotify.com/album/71hjsg660uio3Z8bnbB6fS?highlight=spotify:track:5BXr7hYZQOeRttkeWYTq5S"
+                target="_blank"
+              >
+                <i class="fa-solid fa-play fa-3x"></i>
+              </a>
+            </div>
+  
+            {% endif %}
+          </li>
+        </li>
+
+        <li class="playlist__song">
+            {% if emotion == '분노' %}
+            <img
+              class="albumcover"
+              src="https://image.bugsm.co.kr/album/images/original/5351/535158.jpg?version=undefined"
+              width="50%"
+            />
+            <div class="playlist__info">
+              <h5>스트레스 (Stress)</h5>
+              <h6>태연 (TAEYEON)</h6>
+            </div>
+  
+            <div class="btn-play">
+              <a
+                href="https://open.spotify.com/album/4e7kLQu7SKBUiMtV5WH3A1?highlight=spotify:track:0a0FISfY8ty1xC69xCWf2T"
+                target="_blank"
+              >
+                <i class="fa-solid fa-play fa-3x"></i>
+              </a>
+            </div>
+  
+            {% elif emotion == '슬픔' %}
+            <img
+              class="albumcover"
+              src="https://image.bugsm.co.kr/album/images/original/200249/20024926.jpg?version=undefined"
+              width="50%"
+            />
+            <div class="playlist__info">
+              <h5>한숨</h5>
+              <h6>이하이</h6>
+            </div>
+  
+            <div class="btn-play">
+              <a
+                href="https://open.spotify.com/album/2c41Flo2HQgy0A9P3xuSFf?highlight=spotify:track:6G4z9WbxyEeWdEQTfShACT"
+                target="_blank"
+              >
+                <i class="fa-solid fa-play fa-3x"></i>
+              </a>
+            </div>
+  
+            {% elif emotion == '보통' %}
+            <img
+              class="albumcover"
+              src="https://image.bugsm.co.kr/album/images/original/147071/14707183.jpg?version=undefined"
+              width="50%"
+            />
+            <div class="playlist__info">
+              <h5>cheap sunglasses</h5>
+              <h6>John K</h6>
+            </div>
+  
+            <div class="btn-play">
+              <a
+                href="https://open.spotify.com/album/1LA3eirJ1NylPXjS1gbiD5?highlight=spotify:track:2FwP6d7xG5Hch65LBsa7Zi"
+                target="_blank"
+              >
+                <i class="fa-solid fa-play fa-3x"></i>
+              </a>
+            </div>
+  
+            {% elif emotion == '행복' %}
+            <img
+              class="albumcover"
+              src="https://image.bugsm.co.kr/album/images/original/203225/20322552.jpg?version=undefined"
+              width="50%"
+            />
+            <div class="playlist__info">
+              <h5>HAPPY</h5>
+              <h6>태연 (TAEYEON)</h6>
+            </div>
+  
+            <div class="btn-play">
+              <a
+                href="https://open.spotify.com/album/1nPB6o7EjGvUORXlnioEPk?highlight=spotify:track:459mRPsscVLMvVL59gr7EM"
+                target="_blank"
+              >
+                <i class="fa-solid fa-play fa-3x"></i>
+              </a>
+            </div>
+  
+            {% elif emotion == '즐거움' %}
+            <img
+              class="albumcover"
+              src="https://image.bugsm.co.kr/album/images/original/154325/15432584.jpg?version=undefined"
+              width="50%"
+            />
+            <div class="playlist__info">
+              <h5>Dun Dun Dance</h5>
+              <h6>오마이걸</h6>
+            </div>
+  
+            <div class="btn-play">
+              <a
+                href="https://open.spotify.com/album/2xfmLni05CCgygcNdtPvuN?highlight=spotify:track:54HsCR7lJJdwxmEnTY1JfF"
+                target="_blank"
+              >
+                <i class="fa-solid fa-play fa-3x"></i>
+              </a>
+            </div>
+  
+            {% endif %}
+          </li>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

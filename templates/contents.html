@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Today's dairy</title>
+    <script
+      src="https://kit.fontawesome.com/8aa8789802.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style_contents.css')}}" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <form action="/result" method="post">
+        <header>
+          <h1>Today 5 / 26</h1>
+          <p>지금의 감정을 한 줄로 기록해보세요!</p>
+        </header>
+
+        <div class="diary">
+          <div class="diary__content">
+            <textarea
+              style="width: 90%"
+              placeholder="일기 작성"
+              name="content"
+              rows="4"
+            ></textarea>
+          </div>
+
+          <div class="btn">
+            <input class="btn-save" type="submit" value="저장" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
